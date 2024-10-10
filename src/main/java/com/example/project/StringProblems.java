@@ -8,7 +8,10 @@ public class StringProblems{
     // endsLy("y") → false
     // endsLy("oddy") → false
     public boolean endsLy(String x){
-            //implement code here
+        String str = ""+x.charAt(x.length()-1)+x.charAt(x.length()-2);
+            if(str == "ly"){
+                return true;
+            }
         return false;
     }
 
@@ -20,8 +23,13 @@ public class StringProblems{
     // conCat("dog", "cat") → "dogcat"
     // conCat("abc", "") → "abc"
     public String conCat(String s1, String s2){
-        //implement code here
-        return "";
+        String str = s1+s2;
+        for (int count=0;count<str.length();count++){
+            if(str.charAt(count)==str.charAt(count+1)){
+                str = str.substring(0, count) + str.substring(count+1);
+            }
+        }
+        return str;
     }
 
     // Given a string, return a version without the first 2 chars. 
@@ -43,6 +51,7 @@ public class StringProblems{
     // withoutX("xHi") → "Hi"
     // withoutX("Hxix") → "Hxi"
     public String withoutX(String s1){
+
         return "";
     }
 
@@ -54,6 +63,7 @@ public class StringProblems{
     // fizzString("dib") → "Buzz"
     // fizzString("fib") → "FizzBuzz"
     public String fizzString(String s1){
+        
         return "";
     }
 
