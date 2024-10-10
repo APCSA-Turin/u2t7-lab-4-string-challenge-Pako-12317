@@ -9,12 +9,15 @@ public class StringProblems{
     // endsLy("y") → false
     // endsLy("oddy") → false
     public boolean endsLy(String x){
-        String str = ""+x.charAt(x.length()-1)+x.charAt(x.length()-2);
+       if(x.length()>1){ 
+            String str = ""+x.charAt(x.length()-1)+x.charAt(x.length()-2);
             if(str == "ly"){
                 return true;
             }else{
                 return false;
             }
+       }
+       return false;
     }
 
 
@@ -70,7 +73,7 @@ public class StringProblems{
     // fizzString("fig") → "Fizz"
     // fizzString("dib") → "Buzz"
     // fizzString("fib") → "FizzBuzz"
-    public String testfizzString(String s1){
+    public String fizzString(String s1){
 
         return "";
     }
@@ -84,7 +87,7 @@ public class StringProblems{
     // fizzString2(1) → "1!"
     // fizzString2(2) → "2!"
     // fizzString2(3) → "Fizz!"
-    public String testfizzString2(int x){
+    public String fizzString2(int x){
         return "";
     }
 }
