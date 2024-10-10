@@ -12,8 +12,9 @@ public class StringProblems{
         String str = ""+x.charAt(x.length()-1)+x.charAt(x.length()-2);
             if(str == "ly"){
                 return true;
+            }else{
+                return false;
             }
-        return false;
     }
 
 
@@ -44,9 +45,8 @@ public class StringProblems{
     // deFront("abee") -> "abee"
     // deFront("xbring") -> "bring"
     public String deFont(String s1){
-        char a = "a";
-        if(s1.charAt(0) == "a" || s1.charAt(1) == "b"){
-
+        if(s1.charAt(0) == 'a' || s1.charAt(1) == 'b'){
+            
         }
         return "";
     }
