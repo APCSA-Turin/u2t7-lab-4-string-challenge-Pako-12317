@@ -1,3 +1,4 @@
+package com.example.project;
 public class StringProblems{
     //empty constructor
     public StringProblems(){}
@@ -43,7 +44,10 @@ public class StringProblems{
     // deFront("abee") -> "abee"
     // deFront("xbring") -> "bring"
     public String deFont(String s1){
-        //implement code here
+        char a = "a";
+        if(s1.charAt(0) == "a" || s1.charAt(1) == "b"){
+
+        }
         return "";
     }
 
@@ -66,8 +70,8 @@ public class StringProblems{
     // fizzString("fig") → "Fizz"
     // fizzString("dib") → "Buzz"
     // fizzString("fib") → "FizzBuzz"
-    public String fizzString(String s1){
-        
+    public String testfizzString(String s1){
+
         return "";
     }
 
@@ -80,7 +84,7 @@ public class StringProblems{
     // fizzString2(1) → "1!"
     // fizzString2(2) → "2!"
     // fizzString2(3) → "Fizz!"
-    public String fizzString2(int x){
+    public String testfizzString2(int x){
         return "";
     }
 }
